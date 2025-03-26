@@ -8,13 +8,13 @@ public class SearchingLargeDataset {
         int target = size;
 
         long startTime = System.nanoTime();
-        linearSearch(arr,target);
+        linearSearch(arr,target); // T.C O(N);
         long endTime = System.nanoTime();
 
         System.out.println("Time take by linear search: " + (endTime-startTime));
 
         startTime = System.nanoTime();
-        binarySearch(arr,target);
+        binarySearch(arr,target); // T.C O(log N)
         endTime = System.nanoTime();
         System.out.println("Time take by binary search: " + (endTime-startTime));
 
